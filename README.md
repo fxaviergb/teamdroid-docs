@@ -137,3 +137,71 @@ docker run -it --rm -p 80:80 -p 443:443 teamdroid-docs-caddy
 ```
 
 Make sure to configure domain and certificates properly in the `Caddyfile` for HTTPS support.
+
+## Running the Docker Image From a Repository
+
+
+### 1. Build the Docker image (stage serve by default)
+
+```bash
+docker build -t <your-dockerhub-username>/teamdroid-docs:latest .
+```
+
+Example:
+```bash
+docker build -t fxaviergb/teamdroid-site:latest .
+```
+
+### 2. Push to Docker Hub
+
+```bash
+docker login
+docker push fxaviergb/teamdroid-docs:latest
+```
+
+---
+
+## Local Development Using a Repository
+
+Run the development environment with hot-reloading:
+
+```bash
+docker run -it --rm -p 3000:3000 fxaviergb/teamdroid-docs:latest
+```
+
+> Access at: http://localhost:3000
+
+---
+
+## Serve Production with Caddy
+
+Make sure you have a valid `Caddyfile`. Then run:
+
+### 1. Build image
+
+```bash
+docker build -t fxaviergb/teamdroid-docs:caddy --target=caddy .
+```
+
+### 2. Push to Docker Hub
+
+```bash
+docker login
+docker push fxaviergb/teamdroid-docs:caddy
+```
+
+### 3. Run container
+```bash
+docker run -it --rm -p 80:80 -p 443:443 fxaviergb/teamdroid-docs:caddy
+```
+---
+
+## Environment Configuration
+
+You may add a `.env` file if needed by your Docusaurus configuration.
+
+Example:
+
+```env
+SITE_TITLE=TeamDroid Docs
+```
