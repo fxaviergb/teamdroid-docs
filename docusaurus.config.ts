@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/fxaviergb/teamdroid-docs/edit/master/docs/',
+            'https://github.com/fxaviergb/teamdroid-docs/edit/master/',
         },
         blog: {
           showReadingTime: true,
@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/fxaviergb/teamdroid-docs/edit/master/blog/',
+            'https://github.com/fxaviergb/teamdroid-docs/edit/master/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
