@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteamdroid_docs=self.webpackChunkteamdroid_docs||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/teamdroid-docs/blog","blogTitle":"Blog","authorsListPath":"/teamdroid-docs/blog/authors"}')}}]);
