@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Teamdroid',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'The droids build!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/fxaviergb/teamdroid-docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/fxaviergb/teamdroid-docs/edit/master/docs/',
         },
         blog: {
           showReadingTime: true,
@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/fxaviergb/teamdroid-docs/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/fxaviergb/teamdroid-docs/edit/master/blog/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -82,7 +82,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/fxaviergb/teamdroid-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -126,12 +126,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/fxaviergb/teamdroid-docs/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Teamdroid Docs. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
